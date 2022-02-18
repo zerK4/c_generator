@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* li{
+    list-style: none;
+}
+* a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    background: linear-gradient(to bottom, rgb(60, 115, 136) 0, rgb(44, 0, 102) 100%);
+    min-height: 100vh;
+    overflow: hidden;
+}
+/*Header-------------------------------------*/
+header{
+    display: flex;
+    width: 100%;
+    height: 6rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 5px 1px black;
+}
+.left-header{
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+}
+.search{
+    width: 17rem;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    box-shadow: 1px 1px 5px 1px black;
+}
+.search:focus{
+    transform: scale(1.1);
+    transition: .5s;
+}
+.right-header{
+    display: flex;
+    width: 15%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.user-space{
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    background: rgb(209, 209, 209);
+    border-radius: 50%;
+    border: 3px solid rgb(255, 0, 0, .3);
+}
+.link{
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
+.link a{
+    color: whitesmoke;
+    font-weight: 500;
+    font-family: 'Varela Round', sans-serif;
+}
+.link a:hover{
+    color: rgb(146, 145, 243);
+    transition: .5s;
+}
+/*Header end-------------------------------------*/
+/*Main-------------------------------------*/
+main{
+    min-height: calc(100vh - 6rem);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-container{
+    height: 80vh;
+    width: 95vw;
+    border-radius: 10px;
+}
+.main-container-top{
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.main-container-top-title{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-family: 'Varela Round', sans-serif;
+    color: whitesmoke;
+}
+.button-space{
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.chose{
+    height: 2rem;
+    width: 12rem;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding-left: .5rem;
+}
+.generate{
+    width: 15rem;
+    height: 3rem;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px 1px black;
+    font-size: 1.2rem;
+    font-family: 'Varela Round', sans-serif;
+}
+.generate:hover{
+    box-shadow: 1px 5px 15px 1px black;
+    transition: .5s;
+    cursor: pointer;
+}
+.generate:active{
+    transform: translateY(-5px);
+}
+.main-container-bottom{
+    height: 92%;
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+}
+.color{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 100;
+    font-family: 'Varela Round', sans-serif;
+    opacity: .5;
+
+}
+
+.color:hover{
+    opacity: 1;
+    transition: .5s;
+}
+
+/*Main end-------------------------------------*/
